@@ -1,0 +1,44 @@
+<!-- TODO:
+        Keep Track of last high score
+        Display on start screen once done
+-->
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="flappyStyle.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div id="startMenu" class="gameContainer">
+            <div class="startM">
+                <p class="firstTitle">TRUMP</p>
+                <p class="secondTitle">SIMULATOR</p>
+                <div class="inspirational_quote">
+                    <p class="quote"><i>"Any negative polls are fake news..."</i></p>
+                    <p class="quote_credit">- Donald J. Trump</p>
+                </div>
+
+                <div class="score"> 
+                    <p>Last Score:</p>
+                    <p id=highScore style="text-align: center;"> 0</p>
+                </div>
+                <div class="startButton">
+                    <button onclick="startGame()">Start Game!</button>
+                </div>
+            </div>
+        </div>
+        <canvas id="gameWindow" width="320" height="480"></canvas>
+        <script src="flappyB.js" async defer></script>
+    </body>
+</html>
